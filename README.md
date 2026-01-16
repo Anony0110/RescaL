@@ -28,6 +28,36 @@ Model and method implementation code.
 
 scripts to reproduce our experiments.
 
+## Pre-run Setup
+
+Before running any experiments or demos, please complete the following setup steps.
+
+### Step 1: Unzip data and results
+
+Unzip the provided archives into the project root directory:
+
+```bash
+unzip data.zip
+unzip result.zip
+```
+
+After extraction, the directory structure should include:
+
+```
+data/
+result/
+```
+
+---
+
+### Step 2: Install dependencies
+
+Install all required Python dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
 
 ## Using Custom Datasets
 
@@ -144,7 +174,6 @@ We compare **ReScaL** against a diverse set of representative **baseline scaling
 
 FARSEER models training loss as a function of both **model scale and training configuration**, emphasizing flexible functional forms and improved extrapolation behavior under limited data regimes. It serves as a recent strong baseline for performance prediction.
 
----
 
 ### 2. Chinchilla Scaling Law
 
@@ -152,7 +181,6 @@ FARSEER models training loss as a function of both **model scale and training co
 
 The Chinchilla scaling law revises compute-optimal training prescriptions by jointly considering **model size and dataset size**, demonstrating that many prior models were significantly under-trained. This law is widely adopted as a standard baseline in modern LLM scaling studies.
 
----
 
 ### 3. Kaplan Scaling Law
 
@@ -160,7 +188,6 @@ The Chinchilla scaling law revises compute-optimal training prescriptions by joi
 
 The Kaplan scaling law is an early and influential formulation that models loss as a power-law function of **model parameters, dataset size, and compute**. Despite its simplicity, it remains a canonical baseline in scaling law research.
 
----
 
 ### 4. Data-Constrained Scaling Law
 
@@ -168,7 +195,6 @@ The Kaplan scaling law is an early and influential formulation that models loss 
 
 This line of work focuses on scaling behavior under **fixed or limited data budgets**, explicitly modeling how optimal training strategies and performance trends change when data availability becomes the primary constraint.
 
----
 
 ### 5. Data Mixing Law
 
@@ -176,11 +202,11 @@ This line of work focuses on scaling behavior under **fixed or limited data budg
 
 Data mixing laws extend classical scaling laws by incorporating **data composition and mixture ratios** as first-class variables, modeling how different data sources jointly affect training loss. These laws are particularly relevant for heterogeneous pretraining corpora.
 
----
 
 **Note.** All baseline models are implemented and evaluated under the same experimental protocol as ReScaL to ensure a fair comparison.
 
----
+
+
 
 
 
