@@ -11,11 +11,11 @@ This repository contains the **key codes**, **full data used**, and the **raw ex
 
 ## Documents
 
-- **data**:
+- **data.zip**:
 
 LLM pre-train datasets as specified in the paper.
 
-- **result**:
+- **result.zip**:
 
 All the raw experimental data and their final statistical results (including rank, mean, and std) are stored in this directory.
 
@@ -181,5 +181,6 @@ Data mixing laws extend classical scaling laws by incorporating **data compositi
 **Note.** All baseline models are implemented and evaluated under the same experimental protocol as ReScaL to ensure a fair comparison.
 
 ---
+
 
 
